@@ -7,9 +7,9 @@ import { Tarefa } from '../../modelos/tarefa';
 
   selector: 'app-lista-tarefas',
 
-  templateUrl: './lista-tarefas.component.html',
+  templateUrl: './lista-tarefas.html',
 
-  styleUrls: ['./lista-tarefas.component.css']
+  styleUrls: ['./lista-tarefas.css']
 
 })
 
