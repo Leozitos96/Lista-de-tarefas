@@ -32,7 +32,7 @@ Daniel
 🎓 Sobre o Projeto
 Este sistema foi criado como parte de uma atividade do curso Técnico em Desenvolvimento de Sistemas, oferecido pelo Senac Sorocaba. O principal objetivo foi colocar em prática os conhecimentos adquiridos em aula sobre construção de aplicações web completas, com backend e frontend separados, e comunicação entre eles via API REST.
 
-##⚙️ Como Rodar o Projeto
+⚙️ Como Rodar o Projeto
 Clone este repositório:
 
 ```
