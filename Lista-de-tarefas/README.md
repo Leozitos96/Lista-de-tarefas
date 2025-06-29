@@ -23,13 +23,13 @@ A aplicação foi construída utilizando **Angular** no frontend e **Express (No
 - Excluir tarefas
 - Interface simples e responsiva
 
-##👥 **Autores**
+👥 **Autores**
 Este projeto foi desenvolvido por:
 Leonardo
 Ricardo
 Daniel
 
-##🎓 Sobre o Projeto
+🎓 Sobre o Projeto
 Este sistema foi criado como parte de uma atividade do curso Técnico em Desenvolvimento de Sistemas, oferecido pelo Senac Sorocaba. O principal objetivo foi colocar em prática os conhecimentos adquiridos em aula sobre construção de aplicações web completas, com backend e frontend separados, e comunicação entre eles via API REST.
 
 ##⚙️ Como Rodar o Projeto
