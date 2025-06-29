@@ -1,1 +1,26 @@
-<p>lista-tarefas works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lista-tarefas.css">
+</head>
+<body>
+    <div class="container">
+    <h1>📋 Lista de Tarefas</h1>
+
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Digite sua tarefa..." />
+      <button onclick="addTask()">Adicionar</button>
+    </div>Add commentMore actions
+
+    <div class="filters">
+      <button onclick="filterTasks('all')" class="active">Todas</button>
+      <button onclick="filterTasks('pendente')">Pendentes</button>
+      <button onclick="filterTasks('feita')">Feitas</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+</body>
+</html>
