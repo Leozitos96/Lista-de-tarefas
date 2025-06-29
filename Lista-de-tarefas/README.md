@@ -25,8 +25,8 @@ A aplicação foi construída utilizando **Angular** no frontend e **Express (No
 
 👥 **Autores**
 Este projeto foi desenvolvido por:
-Leonardo
-Ricardo
+Leonardo,
+Ricardo e
 Daniel
 
 🎓 Sobre o Projeto
