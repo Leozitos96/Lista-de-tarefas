@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { Tarefa } from '../../modelos/tarefa';
 
 
+
 @Component({
 
   selector: 'app-lista-tarefas',
