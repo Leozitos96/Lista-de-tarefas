@@ -10,8 +10,8 @@
     <h1>📋 Lista de Tarefas</h1>
 
     <div class="task-input">
-      <input type="text" [(ngModel)]="novaTarefaTitulo" placeholder="Digite sua tarefa..." />
-      <button (click)="adicionarTarefa()">Adicionar</button>
+      <input type="text" id="taskInput" placeholder="Digite sua tarefa..." />
+      <button onclick="addTask()">Adicionar</button>
     </div>Add commentMore actions
 
     <div class="filters">
@@ -20,13 +20,7 @@
       <button onclick="filterTasks('feita')">Feitas</button>
     </div>
 
-    <ul>
-  <li *ngFor="let tarefa of tarefas">
-    <input type="checkbox" [checked]="tarefa.concluida" (change)="alternarStatusTarefa(tarefa.id)">
-    {{ tarefa.titulo }}
-  </li>
-</ul>
+    <ul id="taskList"></ul>
   </div>
-  
 </body>
 </html>
