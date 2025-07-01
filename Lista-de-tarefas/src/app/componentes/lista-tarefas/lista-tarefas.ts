@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 import { Tarefa } from '../../modelos/tarefa';
+import { NgModule } from '@angular/core';
+import { NgModel } from '@angular/forms';
 
 
 @Component({
@@ -9,9 +11,11 @@ import { Tarefa } from '../../modelos/tarefa';
 
   templateUrl: './lista-tarefas.html',
 
-  styleUrls: ['./lista-tarefas.css']
+  styleUrls: ['./lista-tarefas.css'],
 
+  imports: [CommonModule]
 })
+
 
 export class ListaTarefas {
 
@@ -27,6 +31,11 @@ export class ListaTarefas {
   ];
 
 
+
+
+
+
+
   novaTarefaTitulo: string = '';
 
   private proximoId: number = 4; // Para gerar IDs únicos
@@ -39,7 +48,6 @@ export class ListaTarefas {
       return;
 
     }
-
 
     const novaTarefa: Tarefa = {
 

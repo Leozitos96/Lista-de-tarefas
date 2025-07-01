@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lista-tarefas.css">
-</head>
-<body>
-    <div class="container">
+    <body>
+      <div class="container">
     <h1>📋 Lista de Tarefas</h1>
 
-    <div class="task-input">
-      <input type="text" id="taskInput" placeholder="Digite sua tarefa..." />
-      <button onclick="addTask()">Adicionar</button>
-    </div>Add commentMore actions
+ <div class="add-tarefa">
+
+    <input type="text" placeholder="O que precisa ser feito?" [(ngModel)]="novaTarefaTitulo" (keyup.enter)="adicionarTarefa()">
+    <button (click)="adicionarTarefa()">Adicionar</button>
+
+  </div>
 
     <div class="filters">
       <button onclick="filterTasks('all')" class="active">Todas</button>
@@ -20,7 +15,13 @@
       <button onclick="filterTasks('feita')">Feitas</button>
     </div>
 
-    <ul id="taskList"></ul>
+    <ul class="lista">
+    <li *ngFor="let tarefa of tarefas"
+      [class.concluida]="tarefa.concluida"
+      (click)="alternarStatusTarefa(tarefa.id)" class="tarefa">
+      {{ tarefa.titulo }}
+    </li>
+    </ul>
   </div>
-</body>
-</html>
+    </body>
+    
