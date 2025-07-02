@@ -1,5 +1,5 @@
 {
-  "name": "lista-de-tarefas",
+  "name": "lista-tarefas",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:Lista-de-tarefas": "node dist/Lista-de-tarefas/server/server.mjs"
+    "serve:ssr:lista-tarefas": "node dist/lista-tarefas/server/server.mjs"
   },
   "prettier": {
     "overrides": [

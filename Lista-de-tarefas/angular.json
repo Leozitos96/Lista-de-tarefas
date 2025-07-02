@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Lista-de-tarefas": {
+    "minha-lista-de-tarefas": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -58,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Lista-de-tarefas:build:production"
+              "buildTarget": "minha-lista-de-tarefas:build:production"
             },
             "development": {
-              "buildTarget": "Lista-de-tarefas:build:development"
+              "buildTarget": "minha-lista-de-tarefas:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,6 +88,6 @@
     }
   },
   "cli": {
-    "analytics": "602f6fe0-ea03-4b60-9b0d-6f0132269324"
+    "analytics": "86857df2-3dc6-4039-872a-3dff0efae2c3"
   }
 }

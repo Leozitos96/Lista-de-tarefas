@@ -1,27 +1,35 @@
-    <body>
-      <div class="container">
-    <h1>📋 Lista de Tarefas</h1>
+<div class="container">
 
- <div class="add-tarefa">
 
-    <input type="text" placeholder="O que precisa ser feito?" [(ngModel)]="novaTarefaTitulo" (keyup.enter)="adicionarTarefa()">
+  <div class="add-tarefa">
+
+    <input
+
+      type="text"
+
+      placeholder="Digite uma tarefa"
+
+      [(ngModel)]="novaTarefaTitulo"
+
+      (keyup.enter)="adicionarTarefa()"
+    >
+
     <button (click)="adicionarTarefa()">Adicionar</button>
 
   </div>
 
-    <div class="filters">
-      <button onclick="filterTasks('all')" class="active">Todas</button>
-      <button onclick="filterTasks('pendente')">Pendentes</button>
-      <button onclick="filterTasks('feita')">Feitas</button>
-    </div>
+  <ul class="lista">
 
-    <ul class="lista">
-    <li *ngFor="let tarefa of tarefas"
-      [class.concluida]="tarefa.concluida"
-      (click)="alternarStatusTarefa(tarefa.id)" class="tarefa">
-      {{ tarefa.titulo }}
-    </li>
-    </ul>
-  </div>
-    </body>
+<li *ngFor="let tarefa of tarefas"
+    [class.concluida]="tarefa.concluida"
+    (click)="alternarStatusTarefa(tarefa.id)">
     
+  {{ tarefa.titulo }}
+
+  <button (click)="excluirTarefa(tarefa.id); $event.stopPropagation()">
+    Excluir
+  </button>
+</li>
+  </ul>
+
+</div>
